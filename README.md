@@ -9,6 +9,7 @@ Harrison Kurtz resume
 ```sh
 docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex hkurtz_resume.tex
+pdftoppm hkurtz_resume.pdf hkurtz_resume -png -singlefile
 ```
 
 ## Reference
