@@ -2,19 +2,25 @@
 
 ## Overview
 
-Harrison Kurtz resume
-
-## Build
-
-```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex hkurtz_resume.tex
-pdftoppm hkurtz_resume.pdf hkurtz_resume -png -singlefile
-```
-
-## Reference
+Resume written in LaTeX. Contains utilities to convert the LaTeX file to PDF and PNG formats. 
 
 Based off of https://github.com/sb2nov/resume
+
+## Setup
+
+Build docker container containing pdflatex:
+
+```sh
+make build
+```
+
+## Generate
+
+Generate PDF and PNG formats from LaTeX format:
+
+```sh
+make generate
+```
 
 ## Resume
 
