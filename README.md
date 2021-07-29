@@ -24,4 +24,4 @@ make generate
 
 ## Resume
 
-![Resume Screenshot](hkurtz_resume.png)
+![Resume Screenshot](resume.png)
